@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react'
+import React, { useState } from 'react'
 import './App.css'
 const App = () => {
   const[number,setNumber]=useState(1)
@@ -10,14 +10,15 @@ const App = () => {
   }
   function next(){
     setNumber(number+1)
-    if(number>=3){
+    if(number>=3 ){
       setNumber(3)
+      
     }
   }
 
   return (
-    <Fragment>
-     
+    
+    
       <div className='container'>
         <div className='box'>
             <div className='top'>
@@ -35,8 +36,8 @@ const App = () => {
             </div>
         </div>
       </div>
-   
-    </Fragment>
+
+  
   )
 }
 
